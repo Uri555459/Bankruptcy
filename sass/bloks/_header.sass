@@ -1,0 +1,161 @@
+.header 
+
+    .header-top 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 25px 0
+
+        &__logo-lokac
+            display: flex
+            
+            .header-top__logo
+                width: 205px
+                margin-right: 90px
+
+            .header-top__lokac
+                display: flex
+                align-items: center
+                img
+                    width: 15px
+                    height: 20px
+                    margin-right: 13px
+                span
+                    font-size: 15px
+                    line-height: 22px
+                    color: $black
+                    font-weight: 600
+
+        &__contact 
+            display: flex
+            align-items: center
+
+            .header-top__phone 
+                font-size: 18px
+                line-height: 18px
+                font-weight: bold
+                color: $black
+                margin-right: 25px
+
+            .header-top__btn 
+                padding: 10px 35px
+                border-radius: 40px
+                box-shadow: 0px 5px 13px 0px rgba(228, 4, 4, 0.3)
+
+    .header__title
+        background: $accent
+        position: relative
+        padding: 45px 0
+        text-align: center
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            bottom: -30px
+            left: 50%
+            transform: translateX(-50%)
+            width: 0
+            height: 0
+            border-left: 30px solid transparent
+            border-right: 30px solid transparent
+            border-top: 30px solid $accent
+        
+        h1
+            font-size: 52px
+            line-height: 52px
+            color: $white
+            font-weight: 700
+            text-transform: uppercase
+            div 
+                font-size: 30px
+                line-height: 48px
+                text-transform: initial
+
+    >.header-slider__bg 
+
+        .header-slider__wrap
+            display: flex
+            justify-content: space-between
+            position: relative
+
+            .header-slider__man 
+                width: 290px
+                height: 480px
+                position: relative
+                bottom: 50px
+                margin-bottom: -50px
+
+            .header-slider 
+                width: 100%
+                max-width: 470px
+                margin-top: 130px
+                margin-left: 5%
+                margin-right: auto
+
+                .slick-dots
+                    position: absolute
+                    bottom: 0
+                    transform: rotate(-90deg) translateX(-50%)
+                    left: 48%
+
+                    li    
+                        button
+                            width: 12px
+                            height: 12px
+                            border-radius: 50%
+                            font-size: 0
+                            background: #cccccc
+                            cursor: pointer
+
+                    li.slick-active
+                        button 
+                            background: $accent
+
+
+            .header-slider__item 
+                text-align: center
+
+
+            .header-slider__item-title 
+                width: 100%
+                max-width: 290px
+                font-size: 26px
+                line-height: 36px
+                font-style: italic
+                margin: 0 auto 40px
+                font-weight: bold
+
+            .header-slider__item-btn 
+                margin-bottom: 100px
+
+        
+            .header__slider-prev,
+            .header__slider-nex
+                width: 30px
+                height: 30px
+                display: flex
+                justify-content: center
+                align-items: center
+                z-index: 100
+                position: absolute
+                transform: translateY(-50%)
+                cursor: pointer
+                img 
+                    width: 14px
+                    height: 24px
+
+            .header__slider-prev  
+                left: 17%
+                transform: rotate(180deg)
+                top: 46%
+            
+            .header__slider-nex
+                right: 17%
+                top: 50%
+
+            >.header-slider__calc 
+                width: 479px
+                height: 434px
+                position: absolute
+                bottom: -160px
+                right: -220px

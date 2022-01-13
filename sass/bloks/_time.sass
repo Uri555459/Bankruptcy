@@ -1,0 +1,97 @@
+.time 
+    padding-bottom: 70px
+    position: relative
+    &::before
+        content: ""
+        display: block
+        width: 416px
+        height: 416px
+        background: url(../img/time/book.png) no-repeat center center
+        background-size: cover
+        position: absolute
+        top: -110px
+        left: 0
+
+    .container
+        position: relative
+
+    .section-subtitle 
+        max-width: 550px
+        margin-left: auto
+        margin-right: auto
+
+.time__items 
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    margin-top: 90px
+    width: 100%   
+.time__items-2
+    margin-top: 0
+
+.time__item 
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    background: $accent
+    transition: all .3s linear
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 60px
+    &:hover
+        background: #ff0c0a
+        
+    img 
+        position: absolute
+        left: -15px
+
+.time-slider
+    width: 100%
+    max-width: 700px
+    margin: 30px auto 0 auto
+
+    .time-slider__item
+        text-align: center
+        padding: 0 30px
+        outline: none
+
+        .time-slider__item-title
+            font-size: 28px
+            line-height: 29px
+            font-weight: bold
+            margin-bottom: 50px
+
+        .time-slider__item-subninle
+            font-size: 20px
+            line-height: 29px
+            margin-bottom: 60px
+
+        .time-slider__item-btn
+            margin-bottom: 30px
+
+
+.time__slider-prev,
+.time__slider-nex
+    width: 45px
+    height: 45px
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 100
+    position: absolute
+    transform: translateY(-50%)
+    cursor: pointer
+    img
+        width: 23px
+        height: 45px
+
+.time__slider-prev  
+    left: 0
+    transform: rotate(180deg)
+    top: 73%
+
+.time__slider-nex
+    right: 0
+    top: 75%
